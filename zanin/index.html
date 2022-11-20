@@ -1,0 +1,368 @@
+<html>
+<head>
+    <title>ZANIN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans' , sans-serif ;
+        }
+        @font-face {
+            font-family: k24 ;
+            src: url(k24font.ttf);
+        }
+        
+        .hero{
+            height: auto;
+            width: 100%;
+            background-image: linear-gradient(rgba(7, 7, 7, 0.7),rgba(5, 6, 6, 0.7)), url(photo/phone.webp);
+            background-size: cover;
+            background-position: center;
+        }
+
+        
+        nav{
+            display: flex;
+            align-items: center;
+            font-size: 37px;
+            justify-content: space-between;
+            padding: 15px;
+            padding-left: 3%;
+            padding-right: 1%;
+            background-color: rgba(0, 0, 0, 0.1) ;
+;
+        }
+        nav ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 20px;
+            line-height: 40px;
+            margin: 0 5px;
+            text-transform: uppercase;
+        }
+        nav ul li a{
+            font-family: emoji;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        nav ul li a:hover{
+            color: rgb(25, 9, 240);
+            transition: 0.5s;
+        }
+        .row{
+            margin: 0px 68px;
+            padding: 22px 22px;
+
+        }
+        .card{
+            width: 690px;
+            height: 340px;
+            border-radius: 35px;
+            box-sizing: border-box;
+            padding: 15px 20px;
+            margin: 111px 57px;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            padding-top: 260px;
+            margin-top: -20px;
+            box-shadow: 0px 0px 20px  white;
+            transition: 0.5s;
+
+            
+        }
+        .card1{
+            background-image: url(bo\ mazna/5.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .card2{
+            background-image: url(bo\ zaroka/3.jpg);
+            background-size: cover;
+            background-position: center;
+        }  
+        .card3{
+            background-image: url(chalaki/3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .navesari{
+            font-family: emoji;
+            text-align: center;
+            color: white;
+            font-size: 90px;
+            text-shadow: 5px 5px 5px rgb(10, 7, 7) ;
+        }
+        marquee{
+            margin-left: 20%;
+            margin-right: 20%;
+            font-size: 60px;
+            color: rgb(252, 249, 249);
+            text-shadow: 1px 1px 3px rgb(8, 8, 8);
+            font-family: k24 ;
+
+        }
+        .mazna{
+            height: 68px;
+            width: 300px;
+            font-size: 30px;
+            color: aliceblue;
+            background-color: rgb(11 12 13 / 60%);
+            padding: 16px 30px;
+            margin: -14px 163px;
+            border-radius: 15px;
+            font-family: k24 ;
+
+
+        }
+        .zaroka{
+            height: 68px;
+            width: 300px;
+            font-size: 30px;
+            color: aliceblue;
+            background-color: rgb(11 12 13 / 60%);
+            padding: 16px 30px;
+            margin: -14px 163px;
+            border-radius: 15px;
+            font-family: k24 ;
+
+
+        }
+        .chalaki{
+            height: 68px;
+            width: 385px;
+            font-size: 30px;
+            color: aliceblue;
+            background-color: rgb(11 12 13 / 60%);
+            padding: 16px 30px;
+            margin: -14px 163px;
+            border-radius: 15px;
+            font-family: k24 ;
+
+
+        }
+        .tasir{
+            width: 180px;
+            height: 85px;
+            background-color: rgba(255, 255, 255, 0.632);
+            padding: 7px 10px;
+            border-radius: 15px;
+        }
+         a{
+            display: inline-block;
+         }   
+
+
+
+        @media screen and (min-width:1200px){
+
+        .hero{
+            height: 110vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(11, 12, 12, 0.7),rgba(13, 13, 13, 0.7)) , url(photo/photo.jpg) ;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        nav{
+            margin-top: -45px;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            justify-content: space-between;
+            padding: 15px;
+            padding-left: 13%;
+            padding-right: 13%;
+            background-color: rgb(11 12 13 / 40%) ;
+
+        }
+        nav ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        .row{
+            display: flex;
+            align-items: flex-end;
+        }
+        .card{
+            width: 400px;
+            height: 230px;
+            border-radius: 13px;
+            box-sizing: border-box;
+            cursor: pointer;
+            text-align: center;
+            margin-top: -110px;
+            margin-left: 10px;
+            padding-top: 170px;
+            padding-left: 27px;
+            box-shadow: 0px 0px 20px  white;
+
+        }
+        .card:hover{
+            transform: translateY(-10px);
+        }
+
+        .card1{
+            background-image: url(bo\ mazna/5.JPG);
+            background-size: cover;
+            background-position: center;
+        }
+        .card2{
+            background-image: url(bo\ zaroka/3.jpg);
+            background-size: cover;
+            background-position: center;
+        }  
+        .card3{
+            background-image: url(chalaki/3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navesari{
+            font-family: emoji;
+            text-align: center;
+            color: white;
+            font-size: 63px;
+            text-shadow: 5px 5px 5px rgb(10, 7, 7) ;
+            margin-top: -40px;
+        }
+        marquee{
+            margin-left: 20%;
+            margin-right: 20%;
+            font-size: 35px;
+            color: rgb(252, 249, 249);
+            text-shadow: 1px 1px 10px rgb(15, 148, 243);
+            margin-top: -20px;
+            font-family: k24 ;
+
+        }
+        .mazna{
+            height: 39px;
+            width: 240px;
+            font-size: 25px;
+            color: aliceblue;
+            background-color: rgb(11 12 13 / 60%);
+            padding: 6px 18px;
+            margin: 0px 50px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 12px  white;
+            font-family: k24 ;
+
+
+
+        }
+        .zaroka{
+            height: 39px;
+            width: 240px;
+            font-size: 25px;
+            color: aliceblue;
+            background-color: rgb(11 12 13 / 60%);
+            padding: 6px 18px;
+            margin: 0px 50px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 12px  white;
+            font-family: k24 ;
+        }
+        .chalaki{
+            height: 39px;
+            width: 240px;
+            font-size: 25px;
+            color: aliceblue;
+            background-color: rgb(11 12 13 / 60%);
+            padding: 6px 18px;
+            margin: 0px 50px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 12px  white;
+            font-family: k24 ;
+
+
+
+        }
+        .tasir{
+            width: 180px;
+            height: 85px;
+            background-color: rgba(255, 255, 255, 0.632);
+            padding: 7px 10px;
+            border-radius: 15px;
+        }
+        }
+
+
+
+
+
+
+      
+    </style>
+</head>
+<body>
+    <div class="hero">
+
+        <br><br><br><br>
+
+        <nav>
+            <label><img class="tasir" src="photo/reyan.png"></label>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="darbaray ma.html">about us</a></li>
+                <li><a href="call.html">contact us</a></li>
+            </ul>
+        </nav>
+        <br><br><br><br>
+        <div class="nav">
+            <h1 class="navesari">ZANIN INSTITUTE</h1>
+            <br><br><br>
+            <marquee direction="right">بۆ فێرکرنا زمانان و بلندکرنا ئاستێ قوتابیان  </marquee>
+        </div>
+        <br><br>        <br><br>
+        <br><br>
+        <br><br>
+
+
+
+
+        <div class="row">
+
+
+
+<a  href="mazna.html"> 
+            <div class="card card1">
+                <h4 class="mazna">کــورس بـــۆ مەزنـــان</h4>
+            </div>
+</a>
+
+<a href="zaroka.html">           
+            <div class="card card2">
+                <h4 class="zaroka">کـورس بــۆ زاڕۆکـــان</h4>
+            </div>
+</a>
+
+<a href="chalaki.html">           
+            <div class="card card3">
+                <h4 class="chalaki"> چــالاکــیێن مـــە</h4>
+            </div>
+</a>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
