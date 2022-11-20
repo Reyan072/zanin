@@ -1,0 +1,344 @@
+<html>
+<head>
+    <title>ZANIN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans' , sans-serif ;
+        }
+        @font-face {
+            font-family: k24 ;
+            src: url(k24font.ttf);
+        }
+        
+        .hero{
+            height: 115vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(7, 7, 7, 0.7),rgba(5, 6, 6, 0.7)), url(photo/phone.webp);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+        }
+
+        
+        nav{
+            display: flex;
+            align-items: center;
+            font-size: 37px;
+            justify-content: space-between;
+            padding: 15px;
+            padding-left: 3%;
+            padding-right: 1%;
+            background-color: rgba(0, 0, 0, 0.1) ;
+            margin-top: -8px;
+        }
+        nav ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 20px;
+            line-height: 40px;
+            margin: 0 5px;
+            text-transform: uppercase;
+        }
+        nav ul li a{       
+            font-family: emoji;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        nav ul li a:hover{
+            color: rgb(25, 9, 240);
+            transition: 0.5s;
+        }
+        .row{
+            margin: -150px 68px;
+            padding: 22px 22px;
+
+        }
+
+        .tasir{
+            width: 180px;
+            height: 85px;
+            background-color: rgba(255, 255, 255, 0.632);
+            padding: 7px 10px;
+            border-radius: 15px;
+        }
+        button{
+        font-size: 25px;
+        color: rgb(10, 10, 226);
+        background-color: aliceblue;
+        border: solid 3px rgb(99, 38, 230);
+        border-radius: 5px;
+        transition-duration: 0.4s;
+
+        }
+        button:hover{
+        color: white;
+        background-color: blue;
+        border: solid 3px rgb(248, 249, 249);
+        }
+        .tell{
+        display: inline-block;
+        background-color: rgb(41, 134, 196);
+        color: aliceblue;
+        border-radius: 5px;
+        }
+        .box{
+            width: 80%;
+            height: auto;
+            background: rgba(217, 217, 217, 0.655);
+            color: rgb(248, 248, 241);
+            text-align: center;
+            font-size: 45px;
+            padding: 80px 40px;
+            margin: 70px 60px;
+            border-radius: 33px;
+            box-shadow: 0px 0px 20px rgb(8, 222, 241);
+            font-family: k24 ;
+
+        }
+        .box1{
+            background-color: rgba(16, 96, 235, 0.359);
+
+        }
+        .fa-facebook{
+            background-color: antiquewhite;
+            padding: 8px 8px;
+            border-radius: 5px;
+            transition-duration: 0.4s;
+        }
+        .fa-facebook:hover{
+            color: white;
+            background-color: rgb(25, 0, 255);
+
+        }
+
+
+        .box2{
+            background-color: rgba(235, 16, 60, 0.359);
+
+        }
+        .fa-instagram{
+            color: rgb(243, 13, 13);
+            background-color: antiquewhite;
+            padding: 8px 8px;
+            border-radius: 5px;
+            transition-duration: 0.4s;
+        }
+        .fa-instagram:hover{
+            color: white;
+            background-color: rgb(255, 0, 0);
+
+        }
+
+
+
+        .box3{
+            background-color: rgba(235, 206, 16, 0.359);
+
+        }
+        .fa-snapchat{
+            color: rgb(220, 243, 13);
+            background-color: antiquewhite;
+            padding: 8px 8px;
+            border-radius: 5px;
+            transition-duration: 0.4s;
+
+        }
+        .fa-snapchat:hover{
+            color: white;
+            background-color: yellow;
+        }
+
+
+
+
+
+
+
+
+        @media screen and (min-width:1200px){
+
+        .hero{
+            height: auto;
+            width: 100%;
+            background-image: linear-gradient(rgba(11, 12, 12, 0.7),rgba(13, 13, 13, 0.7)) , url(photo/photo.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+        }
+        
+        nav{
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            justify-content: space-between;
+            padding: 15px;
+            padding-left: 13%;
+            padding-right: 13%;
+            background-color: rgb(11 12 13 / 40%) ;
+
+        }
+        nav ul li{
+            list-style-type: none;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+        .tasir{
+            width: 180px;
+            height: 85px;
+            background-color: rgba(255, 255, 255, 0.632);
+            padding: 7px 10px;
+            border-radius: 15px;
+        }
+        .box{
+            width: 80%;
+            height: auto;
+            background: rgba(217, 217, 217, 0.655);
+            color: rgb(248, 248, 244);
+            text-align: center;
+            font-size: 45px;
+            padding: 80px 40px;
+            margin: 70px 140px;
+            border-radius: 33px;
+            box-shadow: 0px 0px 20px rgb(8, 222, 241);
+            font-family: k24 ;
+        }
+        .box1{
+            background-color: rgba(16, 96, 235, 0.359);
+        }
+        .fa-facebook{
+            color: blue;
+            background-color: antiquewhite;
+            padding: 8px 8px;
+            border-radius: 5px;
+            transition-duration: 0.4s;
+        }
+        .fa-facebook:hover{
+            color: white;
+            background-color: rgb(13, 0, 255);
+        }
+
+
+        .box2{
+            background-color: rgba(235, 16, 60, 0.359);
+        }
+        .fa-instagram{
+            color: rgb(243, 13, 13);
+            background-color: antiquewhite;
+            padding: 8px 8px;
+            border-radius: 5px;
+            transition-duration: 0.4s;
+        }
+        .fa-instagram:hover{
+            color: white;
+            background-color: rgb(255, 0, 0);
+        }
+
+
+
+
+        .box3{
+            background-color: rgba(235, 206, 16, 0.359);
+        }
+        .fa-snapchat{
+            color: rgb(220, 243, 13);
+            background-color: antiquewhite;
+            padding: 8px 8px;
+            border-radius: 5px;
+            transition-duration: 0.4s;
+
+        }
+        .fa-snapchat:hover{
+            color: white;
+            background-color: yellow;
+        }
+
+
+
+
+        }
+
+
+
+
+
+
+      
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <br><br>
+
+        <nav>
+            <label><img class="tasir" src="photo/reyan.png"></label>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="darbaray ma.html">about us</a></li>
+                <li><a href="call.html">contact us</a></li>
+            </ul>
+        </nav>
+
+        <br>        <br><br>
+        <br><br>
+        <br><br>
+
+
+
+
+
+<div class="row">
+    
+    <div class="box box0">
+        <p>ژ بۆ پتر پێزانینان پەیوەندیێ ب مە بکە </p>
+        <br>
+        <a href="tel:+9647504126165"><button><i class="fa fa-phone"></i> <br> 07504126165</button> </a>
+
+    </div>
+
+<div class="box box1"> 
+    <br>    
+       <p class="facbook">کلیکك بکە ژ بۆ دیتنا مالپەرێ مە ل تۆرا کومالایەتیا فەیسبووکی</p>
+       <br>
+       <a href="https://m.facebook.com/profile.php?id=100068858456166"><i class="fa fa-facebook"></i> </a>
+
+</div>
+
+<div class="box box2"> 
+    <p>کلیکك بکە ژ بۆ دیتنا مالپەرێ مە ل تۆرا کومالایەتیا ئینستگرامی</p>
+    <br>
+    <a href="https://www.instagram.com/zanin.institute/"><i class="fa fa-instagram"></i> </a>
+
+</div>
+
+<div class="box box3">  
+    <p>کلیکك بکە ژ بۆ دیتنا مالپەرێ مە ل تۆرا کومالایەتیا سناپ چاتی</p>
+    <br>
+    <a href="https://t.snapchat.com/35zvg405"><i class="fa fa-snapchat"></i> </a>
+</div>
+
+</div>
+
+
+
+
+
+</body>
+</html>
